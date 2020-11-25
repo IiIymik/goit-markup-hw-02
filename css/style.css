@@ -8,10 +8,10 @@ body {
   font-family: var(--main-font);
 }
 ul {
-  list-style: none;
+  text-decoration: none;
 }
 a {
-  list-style: none;
+  text-decoration: none;
 }
 .visually-hidden {
   position: absolute;
@@ -60,6 +60,7 @@ a {
   color: var(--accent-color);
 }
 /* header-contact */
+
 .header-contact-mail,
 .header-contact-tel {
   font-weight: 500;
@@ -143,22 +144,31 @@ a {
 }
 /* ======================= Наша команда =====================*/
 /* ======================= Подвал =====================*/
+.footer {
+  background-color: #2f303a;
+}
 .footer-contact-address {
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
-  font-style: normal;
+  color: #ffffff;
 }
 .footer-contact-mail,
 .footer-contact-tel {
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
-  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact-mail:hover,
+.footer-contact-mail:focus,
+.footer-contact-tel:hover,
+.footer-contact-tel:focus {
+  color: var(--accent-color);
 }
 .logo-light {
   font-family: var(--secondary-font);
@@ -166,7 +176,7 @@ a {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 .logo-light > .logo-accent {
   color: var(--accent-color);
@@ -207,8 +217,5 @@ a {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.current-btn {
-  color: #ffffff;
-  background-color: var(--accent-color);
-}
+
 /* ======================= Список Портфолио =============== */
